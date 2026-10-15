@@ -1,0 +1,22 @@
+#include <iostream>
+using namespace std;
+int main() {
+    int n, x, max_c = 0, c = 0, i =0;
+    cin >> n;
+    while (i < n) {
+        cin >> x;
+        if (x != 1){
+            i++;
+            c = 0;
+            continue;
+        }
+        c++;
+        if (c > max_c) {
+            max_c = c;
+        }
+        i++;
+    }
+    cout << max_c;
+    return 0;
+}
+# 3rd problem
