@@ -1,0 +1,15 @@
+#include <iostream>
+using namespace std;
+
+int main () {
+    int n;
+    cin >> n;
+    int k=0;
+    while (k<n) {
+        cout << ((k%2 != 0 || k<n-1) ? 'a' :'b');
+        k++;
+    }
+    cout<<endl;
+    return 0;
+}
+# 1st problem
