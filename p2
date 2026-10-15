@@ -1,0 +1,23 @@
+# include <iostream>
+using namespace std;
+
+int main() {
+    long long x;
+    cin >> x;
+    long long orig=x;
+    long long rever=0;
+    while (x>0 || x<0) {
+        long long d= x%10;
+        rever= rever*10 +d;
+        x /=10;
+    }
+
+    if (orig == rever && orig >= 0) {
+        cout << "true" << endl;
+    } else {
+        cout << "false" << endl;
+    }
+    return 0;
+}
+
+#2nd problem
